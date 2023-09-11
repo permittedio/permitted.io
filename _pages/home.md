@@ -129,6 +129,8 @@ Our platform seamlessly integrates with your existing systems, ensuring a smooth
 
 Elevate your application's floating licensing needs with our cross-platform Web API, .NET API and node API simplifying development by providing a single, versatile interface for diverse platforms, ensuring consistent performance and functionality across the digital landscape.
 
+
+
 {% include feature_row %}
 
 ## Web is the epicenter
