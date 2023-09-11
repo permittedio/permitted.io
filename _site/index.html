@@ -53,7 +53,7 @@
     "@context": "https://schema.org",
     
       "@type": "Person",
-      "name": "Ypermitted.io",
+      "name": "permitted.io",
       "url": "http://localhost:4000/"
     
   }
@@ -339,13 +339,147 @@
 
 </div>
 
-<h1 id="a-forward-thinking-floating-license-platform">A forward-thinking floating-license platform</h1>
+<h1 id="a-future-proof-floating-license-platform">A future-proof floating license platform</h1>
 
-<p class="text-center">Say goodbye to rigid, device-bound licenses and hello to the future of software flexibility, efficiency, and cost savings. Embrace the power of real-time floating licensing with permitted.io and take control of your software usage like never before.</p>
+<p>Say goodbye to rigid, device-bound licenses and hello to the future of software flexibility, efficiency, and cost savings. Embrace the power of real-time floating licensing with permitted.io and take control of your software usage like never before.</p>
+
+<p>Technology evolves rapidly. With permitted.io, you’re always at the forefront of innovation. We regularly update our platform to incorporate the latest advancements, keeping you ahead of the competition.</p>
+
+<p>Ready to propel your business to new heights? Choose permitted.io and embark on a journey of growth, efficiency, and success like never before. Join the ranks of industry leaders who trust us to revolutionize their operations</p>
 
 <hr />
 
-<p class="text-center"><img src="../assets/images/splash/umplifytechs.png" alt="" class="align-center" /></p>
+<h1 id="seamless-code-integration">Seamless code integration</h1>
+
+<p>Our platform seamlessly integrates with your existing systems, ensuring a smooth transition and minimal disruption to your operations. Our simple to use APIs allow you to license your web and desktop applications with a mimimal amount of coding efforts.</p>
+
+<h2 id="typescript">typescript</h2>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">connection</span><span class="p">.</span><span class="nx">Url</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://app.permitted.io/api</span><span class="dl">"</span><span class="p">;</span>
+    <span class="kd">const</span> <span class="nx">seat</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SeatTracker</span><span class="p">(</span><span class="nx">hub</span><span class="p">,</span> <span class="nx">logger</span><span class="p">);</span>
+    <span class="k">await</span> <span class="nx">seat</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="nx">connection</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="c-net">C# .NET</h2>
+
+<div class="language-cs highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kt">var</span> <span class="n">cancellationToken</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">CancellationToken</span><span class="p">();</span>
+  <span class="k">using</span> <span class="nn">var</span> <span class="n">subscription</span> <span class="p">=</span> <span class="n">_session</span><span class="p">.</span><span class="n">OnLicenseEvent</span><span class="p">.</span><span class="nf">Subscribe</span><span class="p">(</span><span class="n">session</span> <span class="p">=&gt;</span>
+  <span class="p">{</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">Licensed</span><span class="p">)</span>
+   <span class="p">{</span>
+   <span class="p">}</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">NotLicensed</span><span class="p">)</span>
+   <span class="p">{</span>
+   <span class="p">}</span>
+   <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">Error</span><span class="p">)</span>
+   <span class="p">{</span>
+   <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="n">error</span> <span class="p">=&gt;</span>
+  <span class="p">{</span>
+   <span class="n">finish</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+  <span class="p">},</span>
+  <span class="p">()</span> <span class="p">=&gt;</span>
+  <span class="p">{</span>
+  <span class="p">});</span>
+  <span class="k">await</span> <span class="n">_session</span><span class="p">.</span><span class="nf">StartAsync</span><span class="p">(</span><span class="k">new</span><span class="p">()</span>
+  <span class="p">{</span>
+   <span class="n">Key</span> <span class="p">=</span> <span class="s">"NotNeeded"</span><span class="p">,</span>
+   <span class="n">UserId</span> <span class="p">=</span> <span class="s">"1037fbf5-dfce-4082-9f18-e323bddc7719|B|C|D|E"</span><span class="p">,</span> <span class="c1">//Example pattern: TenantId|AppId|LicKey|ComponentId|UserId</span>
+   <span class="n">Url</span> <span class="p">=</span> <span class="s">"https://app.permitted.io/api"</span>
+  <span class="p">},</span><span class="n">cancellationToken</span><span class="p">);</span>
+</code></pre></div></div>
+<h2 id="our-apis-are-cross-platform">Our APIs are cross-platform</h2>
+
+<p class="text-center-left">Elevate your application’s floating licensing needs with our cross-platform Web API, .NET API and node API simplifying development by providing a single, versatile interface for diverse platforms, ensuring consistent performance and functionality across the digital landscape.</p>
+
+<div class="feature__wrapper">
+
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/splash/developer.svg" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Seamless Scalability</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Say goodbye to limitations. Our cloud platform scales seamlessly with your needs. Whether you’re a startup dreaming big or a multinational corporation, we’ve got you covered. Grow with confidence. As your team expands, your licensing solution grows with you.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/splash/deploy.svg" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Reliability and Uptime</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Downtime is not an option. With permitted.io, you’ll enjoy unparalleled reliability and minimal downtime. Our cloud-based platform ensures your applications are always accessible.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+    <div class="feature__item">
+      <div class="archive__item">
+        
+          <div class="archive__item-teaser">
+            <img src="/assets/images/splash/launch.svg" alt="" />
+            
+          </div>
+        
+
+        <div class="archive__item-body">
+          
+            <h2 class="archive__item-title">Enhanced Productivity</h2>
+          
+
+          
+            <div class="archive__item-excerpt">
+              <p>Boost productivity across your organization. permitted.io is a Real-Time Floating Licensing platform and ensures that your software is readily available to authorized users, eliminating downtime and delays caused by license bottlenecks.</p>
+
+            </div>
+          
+
+          
+        </div>
+      </div>
+    </div>
+  
+
+</div>
+
+<h2 id="web-is-the-epicenter">Web is the epicenter</h2>
+
+<p class="text-center-left">permitted.io platform employs an array of technologies to not only serve desktop apps, but also web and mobile apps. It offers interesting solutions to problems like session tracking in web browsers on multiple instances or tabs. Leverage this contemporary platform to implement simple solutions for your challenges in JavaScript technology stacks.</p>
 
     </section>
   </article>
@@ -388,7 +522,7 @@
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2023 Ypermitted.io. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2023 permitted.io. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
