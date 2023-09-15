@@ -15,7 +15,7 @@ header:
       url: "/start"
 excerpt: "Empowering your software usage with real-time Floating Licensing" 
 intro:
-  - excerpt: permitted.io is not just a licensing platform; it’s a paradigm shift in how software licensing should work.
+  - excerpt: permitted.io is not just a licensing platform; it’s a paradigm shift in how software licensing should work!
 feature_row:
   - image_path: /assets/images/splash/developer.svg
     title: Seamless Scalability
@@ -25,7 +25,7 @@ feature_row:
     ## btn_class: "btn--secondar"
   - image_path: /assets/images/splash/deploy.svg
     title: Reliability and Uptime
-    excerpt: Downtime is not an option. With permitted.io, you'll enjoy unparalleled reliability and minimal downtime. Our cloud-based platform ensures your applications are always accessible.
+    excerpt: Downtime is not an option. With permitted.io, you'll enjoy unparalleled reliability and minimal downtime. Our cloud-based platform ensures our floating licensing platform is available to your applications at %99.9 of the time.
     # url: "#test-link"
     # btn_label: "Read More"
     # btn_class: "btn--secondar"
@@ -125,7 +125,7 @@ Our platform seamlessly integrates with your existing systems, ensuring a smooth
 ```
 ## Our APIs are cross-platform
 
-{: .text-center-left}
+{: .text-left}
 
 Elevate your application's floating licensing needs with our cross-platform Web API, .NET API and node API simplifying development by providing a single, versatile interface for diverse platforms, ensuring consistent performance and functionality across the digital landscape.
 
@@ -135,6 +135,6 @@ Elevate your application's floating licensing needs with our cross-platform Web 
 
 ## Web is the epicenter
 
-{: .text-center-left}
+{: .text-left}
 
-permitted.io platform employs an array of technologies to not only serve desktop apps, but also web and mobile apps. It offers interesting solutions to problems like session tracking in web browsers on multiple instances or tabs. Leverage this contemporary platform to implement simple solutions for your challenges in JavaScript technology stacks.
+permitted.io's platform employs an array of technologies to not only serve desktop apps, but also web and mobile apps. It offers interesting modern solutions to problems like real-time user session tracking multiple instances of web browsers or a browser's tabs. Leverage our contemporary platform and the `node` SDK to implement simple solutions for your challenges in JavaScript technology stacks.
