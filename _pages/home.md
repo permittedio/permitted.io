@@ -123,18 +123,48 @@ Our platform seamlessly integrates with your existing systems, ensuring a smooth
    Url = "https://app.permitted.io/api"
   },cancellationToken);
 ```
+
 ## Our APIs are cross-platform
 
 {: .text-left}
 
 Elevate your application's floating licensing needs with our cross-platform Web API, .NET API and node API simplifying development by providing a single, versatile interface for diverse platforms, ensuring consistent performance and functionality across the digital landscape.
 
-
-
 {% include feature_row %}
 
-## Web is the epicenter
-
-{: .text-left}
+# Web is the epicenter
+{: .text-center}
 
 permitted.io's platform employs an array of technologies to not only serve desktop apps, but also web and mobile apps. It offers interesting modern solutions to problems like real-time user session tracking multiple instances of web browsers or a browser's tabs. Leverage our contemporary platform and the `node` SDK to implement simple solutions for your challenges in JavaScript technology stacks.
+{: .text-center}
+
+---
+
+# Service plans
+{: .text-left}
+
+
+|Monthly plan [^1]|Annual plan [^1]|Enteprise Solution [^1]|
+| ----------- | ----------- |---|
+|Unlimitted applications to license|Unlimitted applications to license|Tailored to the requirements|
+|Unlimitted license models per application|Unlimitted license models per application|Tailored to the requirements|
+|Unlimitted users per license pool|Unlimitted users per license pool|Tailored to the requirements|
+|Multiple or single session(s) per user|Multiple or single session(s) per user|Tailored to the requirements|
+|License validity period|License validity period|License validity period|
+|Unlimitted users to license|Unlimitted users to license|Tailored to the requirements|
+|Real-time user session tracking [^2]|Real-time user session tracking [^2]|Real-time user session tracking [^2]|
+|Ability to define trial licenses|Ability to define trial licenses|Tailored to the requirements|
+|Exclusive access to our SDKs' GitHub repos|Exclusive access to our SDKs' GitHub repos|Exclusive access to our SDKs' GitHub repos|
+|Access to technical documentation|Access to technical documentation|Access to technical documentation|
+|99.9% up time [^3]|99.9% up time [^3]|[Please contact us](https://permitted.io)|
+|N/A|N/A|A replica of our system on cloud|
+|1 support ticket per month|30 support tickets per year|Unlimitted support tickets|
+|7-day free trial|7-day free trial|N/A|
+|**$500 per month** [^4]|**$5000 per year** [^4] *(you save $1,200 per year)*|[Please contact us](https://permitted.io)|
+|<a href="#" class="btn btn--success btn--large">Create a free account</a> [^5]|<a href="#" class="btn btn--success btn--large">Create a free account</a>  [^5]|[Please contact us](https://permitted.io)|
+
+[^1]: The price, plan, plan's features, techologies and any other details are subject to review and changes at any time with or without advanced notice.
+[^2]: Once all sessions of an active user is disconnected or terminated, an additional license becomes avialble and added back to the license pool.
+[^3]: The SLA and up time is bound to our cloud service provider and the subscribers indemnify us from any financial or technical losses caused by such possible outages or system disruptions deemed out of our control. The up time does not include regular maintenances, bug fixes, feature releases constituted by permitted.io and we do our best to communicate such regular updates by social media, our website and email.
+[^4]: The subscription fee is not prorated. The price is in USD.
+[^5]: You agree with our terms and conditions and privacy policy when creating an account.
