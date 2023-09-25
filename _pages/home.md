@@ -17,19 +17,19 @@ excerpt: "Empowering your software usage with real-time Floating Licensing"
 intro:
   - excerpt: permitted.io is not just a licensing platform; it’s a paradigm shift in how software licensing should work!
 feature_row:
-  - image_path: /assets/images/splash/developer.svg
+  - image_path: /assets/images/cloud.svg
     title: Seamless Scalability
     excerpt: Say goodbye to limitations. Our cloud platform scales seamlessly with your needs. Whether you're a startup dreaming big or a multinational corporation, we've got you covered. Grow with confidence. As your team expands, your licensing solution grows with you.
     ## url: "#test-link"
     ## btn_label: "Read More"
     ## btn_class: "btn--secondar"
-  - image_path: /assets/images/splash/deploy.svg
+  - image_path: /assets/images/uptime.svg
     title: Reliability and Uptime
     excerpt: Downtime is not an option. With permitted.io, you'll enjoy unparalleled reliability and minimal downtime. Our cloud-based platform ensures our floating licensing platform is available to your applications at %99.9 of the time.
     # url: "#test-link"
     # btn_label: "Read More"
     # btn_class: "btn--secondar"
-  - image_path: /assets/images/splash/launch.svg
+  - image_path: /assets/images/productivity.svg
     title: Enhanced Productivity
     excerpt: Boost productivity across your organization. permitted.io is a Real-Time Floating Licensing platform and ensures that your software is readily available to authorized users, eliminating downtime and delays caused by license bottlenecks.
     # url: "#test-link"
@@ -37,22 +37,22 @@ feature_row:
     # btn_class: "btn--secondar" 
 
 feature_row_right1:
-  - image_path: /assets/images/cloud.svg
+  - image_path: /assets/images/real-time.svg
     title: "Real-Time Adaptability"
     excerpt: permitted.io provides licenses on-demand, allocating them to users in real-time. Whether it’s a busy workday or a quiet weekend, licenses automatically adjust to match the number of users requiring access. No more idle licenses during off-peak hours.
 
 feature_row_left1:
-  - image_path: /assets/images/flexibility_software.svg
+  - image_path: /assets/images/code-integration.svg
     title: Easy Integration
     excerpt: permitted.io seamlessly integrates with your existing software systems by its API, whether it’s proprietary software or popular third-party applications. Implementation is hassle-free, and our support team is ready to assist every step of the way.
 
 feature_row_right2:
-  - image_path: /assets/images/cloud.svg
+  - image_path: /assets/images/agnostic.svg
     title: "Platform Agnostic"
     excerpt: Connect applications regardless of the technology stack they’re built on. From iOS and Android to web and desktop, permitted.io’s node, web, and .NET APIs ensure compatibility without constraints.
 
 feature_row_left2:
-  - image_path: /assets/images/flexibility_software.svg
+  - image_path: /assets/images/dashboard.svg
     title: Centralized Management
     excerpt: A user-friendly dashboard gives you complete control over license allocation, usage data, and user access. Manage licenses, track utilization, and make data-driven decisions with ease.
   
@@ -140,9 +140,8 @@ permitted.io's platform employs an array of technologies to not only serve deskt
 
 ---
 
-# Service plans
+# Service plans and subscriptions
 {: .text-left}
-
 
 |Monthly plan [^1]|Annual plan [^1]|Enteprise Solution [^1]|
 | ----------- | ----------- |---|
