@@ -6,4 +6,7 @@
 <url>
 <loc>http://localhost:4000/product/</loc>
 </url>
+<url>
+<loc>http://localhost:4000/_pages/about/</loc>
+</url>
 </urlset>

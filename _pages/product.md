@@ -3,6 +3,7 @@ title: "The product"
 sitemap: true
 permalink: /product/
 ---
+![product](/assets/images/product.jpg){: .align-center}
 
 {% include feature_row id="feature_row" type="center" %}
 
