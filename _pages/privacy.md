@@ -8,15 +8,15 @@ permalink: /privacy/
 permitted.io Privacy Policy.
 Last updated: Sep 21st, 2023
 
-This Privacy Policy describes how permitted.io (the "Site", "we", "us", or "our") collects, uses, and discloses your personal information, your company and yours and your company users when you visit, use our services, or make a purchase or subscriber from [permitted.io](https://permitted.io) (the "Site") or otherwise communicate with us (collectively, the "Services"). For purposes of this Privacy Policy, "you" and "your" means you as the user of the Services on behalf of yourself or your employer, whether you are a customer, subscriber, website visitor, or another individual whose information we have collected pursuant to this Privacy Policy.
+This Privacy Policy describes how permitted.io (the "Site", "system", "we", "us", or "our") collects, uses, and discloses your personal information, your business's, your company's and your company's users' or clients' information who are shared with our system when you visit, use our services, or make a purchase or subscriber from [permitted.io](https://permitted.io) (the "Site") or otherwise communicate with us (collectively, the "Services"). For purposes of this Privacy Policy, "you" and "your" means you as the user of the Services on behalf of yourself or your employer, whether you are a customer, subscriber, website visitor, or another individual whose information we have collected pursuant to this Privacy Policy.
 
 Please read this Privacy Policy carefully. By using and accessing any of the Services, you agree to the collection, use, and disclosure of your information as described in this Privacy Policy. If you do not agree to this Privacy Policy, please do not use or access any of the Services.
 
 ## Changes to This Privacy Policy
 
-We may update this Privacy Policy from time to time, including to reflect changes to our practices or for other operational, legal, or regulatory reasons. We will post the revised Privacy Policy on the Site, update the "Last updated" date and take any other steps required by applicable law. We will do our best to notify you oN any material changes by posting the updated policy on our Site. Although, this is your sole reponsibility to check this page periodically to learn about the latest changes on our privacy policy.
+We may update this Privacy Policy from time to time, including to reflect changes to our practices or for other operational, legal, or regulatory reasons. We will post the revised Privacy Policy on the Site, update the "Last updated" date and take any other steps required by applicable law. We will do our best to notify you on any material changes by posting the updated policy on our Site. Although, this is your sole reponsibility to check this page periodically to learn about the latest changes on our privacy policy.
 
-## How We Collect and Use Your Personal Information
+## How We Collect and Use Your Personal and Business Information
 
 To provide the Services, we collect and have collected personal information about you from a variety of sources, as set out below. The information that we collect and use varies depending on how you interact with us.
 
@@ -24,7 +24,7 @@ In addition to the specific uses set out below, we may use information we collec
 
 ## What Personal Information We Collect
 
-The types of personal information we obtain about you depends on how you interact with our Site and use our Services. When we use the term "personal information", we are referring to information that identifies, relates to, describes or can be associated with you including your employer. The following sections describe the categories and specific types of personal information we collect.
+The types of personal information we obtain about you depends on how you interact with our Site and use our Services. When we use the term "personal information", we are referring to information that identifies, relates to, describes or can be associated with you including your employer, business, your company, your clients, your users, your business clients or users or your company's clients and users. The following sections describe the categories and specific types of personal information we collect.
 
 ### Information We Collect Directly from You
 
@@ -35,6 +35,7 @@ Information that you directly submit to us through our Services may include:
 * Account information including your username, password, security questions.
 * Shopping information including the items you view, put in your cart or add to your wishlist.
 * Customer support information including the information you choose to include in communications with us, for example, when sending a message through the Services.
+* Your business's or company's or employer's users and clients information usually but not necessarily limitted to their user identifications.
 
 Some features of the Services may require you to directly provide us with certain information about yourself. You may elect not to provide this information, but doing so may prevent you from using or accessing these features.
 
