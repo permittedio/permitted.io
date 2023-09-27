@@ -167,3 +167,14 @@ permitted.io's platform employs an array of technologies to not only serve deskt
 [^3]: The SLA and up time is bound to our cloud service provider and the subscribers indemnify us from any financial or technical losses caused by such possible outages or system disruptions deemed out of our control. The up time does not include regular maintenances, bug fixes, feature releases constituted by permitted.io and we do our best to communicate such regular updates by social media, our website and email.
 [^4]: The subscription fee is not prorated. The price is in USD.
 [^5]: You agree with our terms and conditions and privacy policy when creating an account.
+
+---
+
+# Our partners and technologies
+
+
+{: .text-center}
+
+![](../assets/images/technologies.png){: .align-center}
+
+---
