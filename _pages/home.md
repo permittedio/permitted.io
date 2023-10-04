@@ -9,7 +9,7 @@ classes:
 header:
   overlay_color: "#000"
   overlay_filter: "0.125"
-  overlay_image: /assets/images/splash/splashhomepage.jpg
+  overlay_image: /assets/images/splash/home_page_splash.jpg
   actions:
     - label: "Create a free account"
       url: "/start"
@@ -17,7 +17,7 @@ excerpt: "Empowering your software usage with real-time Floating Licensing"
 intro:
   - excerpt: permitted.io is not just a licensing platform; it’s a paradigm shift in how software licensing should work!
 feature_row:
-  - image_path: /assets/images/cloud.svg
+  - image_path: /assets/images/cloud.jpg
     title: Seamless Scalability
     excerpt: Say goodbye to limitations. Our cloud platform scales seamlessly with your needs. Whether you're a startup dreaming big or a multinational corporation, we've got you covered. Grow with confidence. As your team expands, your licensing solution grows with you.
     ## url: "#test-link"

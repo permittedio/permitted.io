@@ -1,6 +1,7 @@
 ---
 title: "The product"
 sitemap: true
+layout: splash
 permalink: /product/
 ---
 ![product](/assets/images/product.jpg){: .align-center}

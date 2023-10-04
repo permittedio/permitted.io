@@ -5,17 +5,17 @@ layout: splash
 permalink: /permitted-io-vs-own-licensing-system/
 
 feature_row_right1:
-  - image_path: /assets/images/cost.svg
+  - image_path: /assets/images/cost.jpg
     title: Cost
     excerpt: In-house design and ongoing development, deployment and maintainence of a licensing system are expensive and the expenses can simply exceed the budget. As your business expands, the demands placed on your licensing system tend to increase. Frequently, a significant amount of manual effort is required to address the limitations of the licensing system. Consequently, ongoing maintenance and continuous development of the system become imperative in the coming months and years. As time passes, these cumulative efforts can lead to increased costs.
 
 feature_row_left1:
-  - image_path: /assets/images/code-integration.svg
+  - image_path: /assets/images/resource.jpg
     title: Resources
     excerpt: The resources won't be avaialble to work on your main line of business's product causing delay in delivering your commitments. Constructing and sustaining a licensing system that is simultaneously secure, dependable, and adaptable is far from simple. While you may initiate the process with specific demands in mind, these requirements inevitably transform as your enterprise expands. Consequently, you must continuously enhance the system, incorporating new functionalities and capabilities. Over time, preserving an internally developed solution, facilitating crucial integrations with other corporate systems, and ensuring long-term security becomes a formidable task.
 
 feature_row_right2:
-  - image_path: /assets/images/agnostic.svg
+  - image_path: /assets/images/time.jpg
     title: Time
     excerpt: Developing your licensing solution takes time by factoring in research, running POCs, and employing the right technology. Creating and sustaining an internal licensing system significantly hampers your progress and is highly likely to result in delays since it diverts your engineering team's attention away from your primary product development. By partnering with a specialist such as permitted.io, you can save a substantial amount of time. Our dedicated team is focused on simplifying the integration with your product, which means that, depending on your specific needs, you could be operational within a few weeks.
 ---
