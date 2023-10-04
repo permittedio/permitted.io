@@ -135,7 +135,9 @@ footer:
     - label: "Privacy policy"
       url: /privacy/
     - label: "Terms of use"
-      url: /terms/      
+      url: /terms/
+    - label: "Why to sign up"
+      url: /permitted-io-vs-own-licensing-system/
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
