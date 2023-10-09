@@ -160,7 +160,7 @@ permitted.io's platform employs an array of technologies to not only serve deskt
 |N/A|N/A|A replica of our system on cloud|
 |1 support ticket per month|30 support tickets per year|Unlimitted support tickets|
 |7-day free trial|7-day free trial|N/A|
-|**$500 per month** [^4]|**$5000 per year** [^4] *(you save $1,200 per year)*|[Please contact us](https://permitted.io)|
+|**$500 per month** [^4]|**$5000 per year** [^4]|[Please contact us](https://permitted.io)|
 |<a href="#" class="btn btn--success btn--large">Create a free account</a> [^5]|<a href="#" class="btn btn--success btn--large">Create a free account</a>  [^5]|[Please contact us](https://permitted.io)|
 
 [^1]: The price, plan, plan's features, techologies and any other details are subject to review and changes at any time with or without advanced notice.
