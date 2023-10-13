@@ -88,7 +88,10 @@ Our platform seamlessly integrates with your existing systems, ensuring a smooth
 ## typescript
 
 ```typescript
-    connection.Url = "http://app.permitted.io/api";
+    const connection = new ConnectionParameters();
+    connection.AccessKey = 'myKey';
+    connection.UserId = "myUserId";
+    connection.LicensingEndpoint = "https://licensing.permitted.io/api";
     const seat = new SeatTracker(hub, logger);
     await seat.start(connection);
 ```
@@ -99,28 +102,28 @@ Our platform seamlessly integrates with your existing systems, ensuring a smooth
   var cancellationToken = new CancellationToken();
   using var subscription = _session.OnLicenseEvent.Subscribe(session =>
   {
-   if(session.LicenseMessage == LicenseMessage.Licensed)
-   {
-   }
-   if(session.LicenseMessage == LicenseMessage.NotLicensed)
-   {
-   }
-   if(session.LicenseMessage == LicenseMessage.Error)
-   {
-   }
+      if(session.LicenseMessage == LicenseMessage.Licensed)
+      {
+      }
+      if(session.LicenseMessage == LicenseMessage.NotLicensed)
+      {
+      }
+      if(session.LicenseMessage == LicenseMessage.Error)
+      {
+      }
   },
   error =>
   {
-   finish = true;
+      finish = true;
   },
   () =>
   {
   });
   await _session.StartAsync(new()
   {
-   Key = "NotNeeded",
-   UserId = "1037fbf5-dfce-4082-9f18-e323bddc7719|B|C|D|E", //Example pattern: TenantId|AppId|LicKey|ComponentId|UserId
-   Url = "https://app.permitted.io/api"
+      AccessKey = "myKey",
+      UserId = "myUserId",
+      LicensingEndpoint = "https://licensing.permitted.io/api"
   },cancellationToken);
 ```
 

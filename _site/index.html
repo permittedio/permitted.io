@@ -355,7 +355,10 @@
 
 <h2 id="typescript">typescript</h2>
 
-<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="nx">connection</span><span class="p">.</span><span class="nx">Url</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">http://app.permitted.io/api</span><span class="dl">"</span><span class="p">;</span>
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>    <span class="kd">const</span> <span class="nx">connection</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">ConnectionParameters</span><span class="p">();</span>
+    <span class="nx">connection</span><span class="p">.</span><span class="nx">AccessKey</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">myKey</span><span class="dl">'</span><span class="p">;</span>
+    <span class="nx">connection</span><span class="p">.</span><span class="nx">UserId</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">myUserId</span><span class="dl">"</span><span class="p">;</span>
+    <span class="nx">connection</span><span class="p">.</span><span class="nx">LicensingEndpoint</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">https://licensing.permitted.io/api</span><span class="dl">"</span><span class="p">;</span>
     <span class="kd">const</span> <span class="nx">seat</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">SeatTracker</span><span class="p">(</span><span class="nx">hub</span><span class="p">,</span> <span class="nx">logger</span><span class="p">);</span>
     <span class="k">await</span> <span class="nx">seat</span><span class="p">.</span><span class="nx">start</span><span class="p">(</span><span class="nx">connection</span><span class="p">);</span>
 </code></pre></div></div>
@@ -365,28 +368,28 @@
 <div class="language-cs highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  <span class="kt">var</span> <span class="n">cancellationToken</span> <span class="p">=</span> <span class="k">new</span> <span class="nf">CancellationToken</span><span class="p">();</span>
   <span class="k">using</span> <span class="nn">var</span> <span class="n">subscription</span> <span class="p">=</span> <span class="n">_session</span><span class="p">.</span><span class="n">OnLicenseEvent</span><span class="p">.</span><span class="nf">Subscribe</span><span class="p">(</span><span class="n">session</span> <span class="p">=&gt;</span>
   <span class="p">{</span>
-   <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">Licensed</span><span class="p">)</span>
-   <span class="p">{</span>
-   <span class="p">}</span>
-   <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">NotLicensed</span><span class="p">)</span>
-   <span class="p">{</span>
-   <span class="p">}</span>
-   <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">Error</span><span class="p">)</span>
-   <span class="p">{</span>
-   <span class="p">}</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">Licensed</span><span class="p">)</span>
+      <span class="p">{</span>
+      <span class="p">}</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">NotLicensed</span><span class="p">)</span>
+      <span class="p">{</span>
+      <span class="p">}</span>
+      <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">Error</span><span class="p">)</span>
+      <span class="p">{</span>
+      <span class="p">}</span>
   <span class="p">},</span>
   <span class="n">error</span> <span class="p">=&gt;</span>
   <span class="p">{</span>
-   <span class="n">finish</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+      <span class="n">finish</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
   <span class="p">},</span>
   <span class="p">()</span> <span class="p">=&gt;</span>
   <span class="p">{</span>
   <span class="p">});</span>
   <span class="k">await</span> <span class="n">_session</span><span class="p">.</span><span class="nf">StartAsync</span><span class="p">(</span><span class="k">new</span><span class="p">()</span>
   <span class="p">{</span>
-   <span class="n">Key</span> <span class="p">=</span> <span class="s">"NotNeeded"</span><span class="p">,</span>
-   <span class="n">UserId</span> <span class="p">=</span> <span class="s">"1037fbf5-dfce-4082-9f18-e323bddc7719|B|C|D|E"</span><span class="p">,</span> <span class="c1">//Example pattern: TenantId|AppId|LicKey|ComponentId|UserId</span>
-   <span class="n">Url</span> <span class="p">=</span> <span class="s">"https://app.permitted.io/api"</span>
+      <span class="n">AccessKey</span> <span class="p">=</span> <span class="s">"myKey"</span><span class="p">,</span>
+      <span class="n">UserId</span> <span class="p">=</span> <span class="s">"myUserId"</span><span class="p">,</span>
+      <span class="n">LicensingEndpoint</span> <span class="p">=</span> <span class="s">"https://licensing.permitted.io/api"</span>
   <span class="p">},</span><span class="n">cancellationToken</span><span class="p">);</span>
 </code></pre></div></div>
 
