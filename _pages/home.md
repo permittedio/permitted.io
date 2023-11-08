@@ -161,8 +161,8 @@ permitted.io's platform employs an array of technologies to not only serve deskt
 |Access to technical documentation|Access to technical documentation|Access to technical documentation|
 |99.9% up time [^3]|99.9% up time [^3]|[Please contact us](https://permitted.io)|
 |N/A|N/A|A replica of our system on cloud|
-|1 support ticket per month|30 support tickets per year|Unlimitted support tickets|
-|7-day free trial|7-day free trial|N/A|
+|2 support ticket per month|48 support tickets per year|[Please contact us](https://permitted.io)|
+|7-day free trial|7-day free trial|[Please contact us](https://permitted.io)|
 |**$500 per month** [^4]|**$5000 per year** [^4]|[Please contact us](https://permitted.io)|
 |<a href="#" class="btn btn--success btn--large">Create a free account</a> [^5]|<a href="#" class="btn btn--success btn--large">Create a free account</a>  [^5]|[Please contact us](https://permitted.io)|
 
