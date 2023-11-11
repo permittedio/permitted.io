@@ -48,7 +48,25 @@ Hence, the user's user ID becomes the final component required by the SDK for li
 
 ### Installation of the NuGet Package
 
-**TBD**
+The NuGet package can be found [here](https://www.nuget.org/packages/Permitted.io.Sdk).
+
+#### Reference in a C# project
+
+```xml
+<PackageReference Include="Permitted.io.Sdk" Version="2.1.1" />
+```
+
+#### Add by dotnet CLI
+
+```
+dotnet add package Permitted.io.Sdk --version 2.1.1
+```
+
+#### Add by Package Manager
+
+```
+PM> NuGet\Install-Package Permitted.io.Sdk -Version 2.1.1
+```
 
 ### Protocol Details
 

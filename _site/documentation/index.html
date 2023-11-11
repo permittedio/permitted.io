@@ -160,7 +160,7 @@
 
 <p>The initial step in utilizing the permitted.io floating licensing system is to create a profile within the system for the application or software intended for licensing. The designated admin portal streamlines this process, as illustrated in the screenshot. It is essential to note down the application ID (highlighted with a red line) for use within the SDK.</p>
 
-<p><img src="../assets/images/appslist.png" alt="" /></p>
+<p><img src="/assets/images/appslist.png" alt="" /></p>
 
 <h3 id="definition-of-the-license-model-associated-with-the-application">Definition of the License Model Associated with the Application</h3>
 
@@ -175,11 +175,11 @@
 
 <p>The UI elements captured in the screenshot facilitate the collection of these parameters:</p>
 
-<p><img src="../assets/images/licensedefinition.png" alt="" /></p>
+<p><img src="/assets/images/licensedefinition.png" alt="" /></p>
 
 <p>After saving the license model, a license key is generated, as demonstrated in the following screenshot, for use within the SDK:</p>
 
-<p><img src="../assets/images/softwarelicense.png" alt="" /></p>
+<p><img src="/assets/images/softwarelicense.png" alt="" /></p>
 
 <blockquote>
   <p>permitted.io provides an advantage by allowing the definition of multiple license models for your software or application.</p>
@@ -193,7 +193,22 @@
 
 <h3 id="installation-of-the-nuget-package">Installation of the NuGet Package</h3>
 
-<p><strong>TBD</strong></p>
+<p>The NuGet package can be found <a href="https://www.nuget.org/packages/Permitted.io.Sdk">here</a>.</p>
+
+<h4 id="reference-in-a-c-project">Reference in a C# project</h4>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"Permitted.io.Sdk"</span> <span class="na">Version=</span><span class="s">"2.1.1"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h4 id="add-by-dotnet-cli">Add by dotnet CLI</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet add package Permitted.io.Sdk --version 2.1.1
+</code></pre></div></div>
+
+<h4 id="add-by-package-manager">Add by Package Manager</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PM&gt; NuGet\Install-Package Permitted.io.Sdk -Version 2.1.1
+</code></pre></div></div>
 
 <h3 id="protocol-details">Protocol Details</h3>
 
