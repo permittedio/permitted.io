@@ -144,12 +144,12 @@ footer:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url:
-    - label: "GitHub"
+    - label: ".NET SDK"
       icon: "fab fa-fw fa-github"
-      # url: https://github.com
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
+      url: https://github.com/permittedio/permitted.io.sdk.net
+    - label: "node SDK"
+      icon: "fab fa-fw fa-github"
+      url: https://github.com/permittedio/permitted.io.sdk.node
     - label: "Bitbucket"
       icon: "fab fa-fw fa-bitbucket"
       # url:
