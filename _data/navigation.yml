@@ -1,0 +1,11 @@
+main:
+  - title: "Home"
+    url: /
+  - title: "Product"
+    url: /product/
+  - title: "Documentation"
+    url: /documentation/  
+  - title: "About"
+    url: /about/
+  - title: "Contact Us"
+    url: /contact/  

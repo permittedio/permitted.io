@@ -1,0 +1,510 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>The SDK documentation - Site Title</title>
+<meta name="description" content="A floating licensing platform.">
+
+
+  <meta name="author" content="Arash Sabet">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Site Title">
+<meta property="og:title" content="The SDK documentation">
+<meta property="og:url" content="http://localhost:4000/documentation/">
+
+
+  <meta property="og:description" content="A floating licensing platform.">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/documentation/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "permitted.io",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--splash">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/permittedio-logos_transparent.png" alt=" "></a>
+        
+        <a class="site-title" href="/">
+           
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/">Home</a>
+            </li><li class="masthead__menu-item">
+              <a href="/product/">Product</a>
+            </li><li class="masthead__menu-item">
+              <a href="/documentation/">Documentation</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/contact/">Contact Us</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="The SDK documentation">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <h1 id="permittedios-net-sdk">permitted.io’s .NET SDK</h1>
+
+<h2 id="objectives">Objectives</h2>
+
+<p>The goal of releasing this .NET NuGet package or library is to enable the permitted.io floating licensing system to integrate with your licensed software with no complex programming efforts.</p>
+
+<h2 id="integration-process">Integration Process</h2>
+
+<p>The integration process is relatively straightforward and encompasses the following key steps:</p>
+
+<h3 id="application-registration-for-licensing">Application Registration for Licensing</h3>
+
+<p>The initial step in utilizing the permitted.io floating licensing system is to create a profile within the system for the application or software intended for licensing. The designated admin portal streamlines this process, as illustrated in the screenshot. It is essential to note down the application ID (highlighted with a red line) for use within the SDK.</p>
+
+<p><img src="/assets/images/appslist.png" alt="" /></p>
+
+<h3 id="definition-of-the-license-model-associated-with-the-application">Definition of the License Model Associated with the Application</h3>
+
+<p>Subsequent to the application registration, the following step involves defining a license model integrated with user connection tracking rules. Several parameters are necessary to define this model:</p>
+
+<ul>
+  <li>Name: A user-friendly label for the license model.</li>
+  <li>License pool size: Total count of users eligible for simultaneous licensing.</li>
+  <li>Concurrent seats per user: The maximum number of simultaneous sessions per user.</li>
+  <li>License validity period in days: Duration of a user’s valid license since their initial connection.</li>
+</ul>
+
+<p>The UI elements captured in the screenshot facilitate the collection of these parameters:</p>
+
+<p><img src="/assets/images/licensedefinition.png" alt="" /></p>
+
+<p>After saving the license model, a license key is generated, as demonstrated in the following screenshot, for use within the SDK:</p>
+
+<p><img src="/assets/images/softwarelicense.png" alt="" /></p>
+
+<blockquote>
+  <p>permitted.io provides an advantage by allowing the definition of multiple license models for your software or application.</p>
+</blockquote>
+
+<h3 id="association-of-user-ids-with-the-license-model">Association of User IDs with the License Model</h3>
+
+<p>To link your system’s user IDs with the defined license model, submission of these IDs to our system is necessary. The list of licensed users can be manually entered or batched in a headless CSV file format, as shown in the designated UI element in the screenshot.</p>
+
+<p>Hence, the user’s user ID becomes the final component required by the SDK for licensing a user.</p>
+
+<h3 id="installation-of-the-nuget-package">Installation of the NuGet Package</h3>
+
+<p>The NuGet package can be found <a href="https://www.nuget.org/packages/Permitted.io.Sdk">here</a>.</p>
+
+<h4 id="reference-in-a-c-project">Reference in a C# project</h4>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;PackageReference</span> <span class="na">Include=</span><span class="s">"Permitted.io.Sdk"</span> <span class="na">Version=</span><span class="s">"2.1.1"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<h4 id="add-by-dotnet-cli">Add by dotnet CLI</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dotnet add package Permitted.io.Sdk --version 2.1.1
+</code></pre></div></div>
+
+<h4 id="add-by-package-manager">Add by Package Manager</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PM&gt; NuGet\Install-Package Permitted.io.Sdk -Version 2.1.1
+</code></pre></div></div>
+
+<h3 id="protocol-details">Protocol Details</h3>
+
+<p>The following C# interface presents permitted.io’s integration protocol. The integration can be established by calling the <code class="language-plaintext highlighter-rouge">AddSeatSession()</code> extension method available in the <code class="language-plaintext highlighter-rouge">Permitted.io.Sdk.Extensions.DependencyInjection</code> interface <sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>.</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="k">interface</span> <span class="nc">ISeatTracker</span>
+<span class="p">{</span>
+    <span class="n">IObservable</span><span class="p">&lt;</span><span class="n">ISeat</span><span class="p">&gt;</span> <span class="n">OnLicenseEvent</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="n">LicenseMessage</span> <span class="n">LicenseMessage</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">object</span><span class="p">?</span> <span class="n">LicenseData</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="p">}</span>
+    <span class="kt">bool</span> <span class="nf">IsCeased</span><span class="p">();</span>
+    <span class="kt">bool</span> <span class="nf">IsObserving</span><span class="p">();</span>
+    <span class="n">Task</span> <span class="nf">StartAsync</span><span class="p">(</span><span class="n">ConnectionInfo</span> <span class="n">connectionInfo</span><span class="p">,</span> <span class="n">CancellationToken</span> <span class="n">cancellationToken</span> <span class="p">=</span> <span class="k">default</span><span class="p">);</span>
+    <span class="n">Task</span> <span class="nf">StopAsync</span><span class="p">(</span><span class="n">CancellationToken</span> <span class="n">cancellationToken</span> <span class="p">=</span> <span class="k">default</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="connectionparameters-class">ConnectionParameters Class</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">LicensingEndpoint</code>: URL of permitted.io’s endpoint.</li>
+  <li><code class="language-plaintext highlighter-rouge">UserId</code>: Recognizable user ID following the pattern <code class="language-plaintext highlighter-rouge">|AppId|LicKey||UserId</code>, where <code class="language-plaintext highlighter-rouge">AppId</code> and <code class="language-plaintext highlighter-rouge">LicKey</code> are obtained from the admin portal, and <code class="language-plaintext highlighter-rouge">UserId</code> represents your user’s ID in our system.</li>
+  <li><code class="language-plaintext highlighter-rouge">AccessKey</code>: A unique key provided by permitted.io’s technology team for integration. Please contact us to obtain this key.</li>
+</ul>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="n">record</span> <span class="n">ConnectionParameters</span>
+<span class="p">{</span>
+    <span class="k">public</span> <span class="kt">string</span><span class="p">?</span> <span class="n">LicensingEndpoint</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">string</span><span class="p">?</span> <span class="n">UserId</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+    <span class="k">public</span> <span class="kt">string</span><span class="p">?</span> <span class="n">AccessKey</span> <span class="p">{</span> <span class="k">get</span><span class="p">;</span> <span class="k">set</span><span class="p">;</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="seatmessage-enum">SeatMessage Enum</h4>
+
+<p>The enum values, available through the <code class="language-plaintext highlighter-rouge">LicenseMessage</code> property upon the <code class="language-plaintext highlighter-rouge">subject</code> event, signify distinct states.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">public</span> <span class="kr">enum</span> <span class="nx">LicenseMessage</span>
+<span class="p">{</span>
+    <span class="nx">Unknown</span><span class="p">,</span>
+    <span class="nx">Licensed</span><span class="p">,</span>
+    <span class="nx">NotLicensed</span><span class="p">,</span>
+    <span class="nb">Error</span><span class="p">,</span>
+    <span class="nx">DisconnectionRequested</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The implications of these values are as follows:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Unknown</code>: Signifies an unexpected or unsupported situation in the backend, necessitating reporting to permitted.io’s team for troubleshooting.</li>
+  <li><code class="language-plaintext highlighter-rouge">Licensed</code>: Indicates successful user licensing, providing access to your software.</li>
+  <li><code class="language-plaintext highlighter-rouge">NotLicensed</code>: Denotes unavailability of a license due to pool exhaustion, resulting in denied access to the software.</li>
+  <li><code class="language-plaintext highlighter-rouge">Error</code>: Represents a backend error requiring reporting to permitted.io’s team.</li>
+  <li><code class="language-plaintext highlighter-rouge">DisconnectionRequested</code>: This request is sent by the backend, usually during system maintenance, prompting users to sign out.</li>
+</ul>
+
+<h3 id="user-disconnection">User Disconnection</h3>
+
+<p>Releasing a user’s license back to the pool is achieved by calling the <code class="language-plaintext highlighter-rouge">StopAsync()</code> function or disconnecting the software from the internet.</p>
+
+<h3 id="workflow-for-your-application-or-software">Workflow for Your Application or Software</h3>
+
+<p>For a successful integration with permitted.io, your application’s or software’s workflow must meet these requirements:</p>
+
+<ul>
+  <li>Preserve or cache the mentioned parameters: license key and application ID.</li>
+  <li>Retrieve the user’s ID from your backend post successful authentication.</li>
+  <li>Pass these three pieces of information to permitted.io’s SDK via an instance of the <code class="language-plaintext highlighter-rouge">ConnectionParameters</code> class.</li>
+  <li>Invoke the <code class="language-plaintext highlighter-rouge">StartAsync()</code> method and respond according to the messages received from permitted.io’s backend.</li>
+</ul>
+
+<p>The code snippet below demonstrates the integration:</p>
+
+<div class="language-csharp highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">using</span> <span class="nn">var</span> <span class="n">subscription</span> <span class="p">=</span> <span class="n">_session</span><span class="p">.</span><span class="n">OnLicenseEvent</span><span class="p">.</span><span class="nf">Subscribe</span><span class="p">(</span><span class="n">session</span> <span class="p">=&gt;</span>
+<span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">Licensed</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//The user is licensed and your software must serve the licensed user</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">NotLicensed</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//The user is not licensed and therefore your software must cease serving the user</span>
+    <span class="p">}</span>
+    <span class="k">if</span><span class="p">(</span><span class="n">session</span><span class="p">.</span><span class="n">LicenseMessage</span> <span class="p">==</span> <span class="n">LicenseMessage</span><span class="p">.</span><span class="n">Error</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="c1">//There is an error. Please contact permitted.io's support team</span>
+    <span class="p">}</span>
+<span class="p">},</span>
+<span class="n">error</span> <span class="p">=&gt;</span>
+<span class="p">{</span>
+    <span class="c1">//The `error` object has details on the error. Act accordinly or contact permitted.io's support team.</span>
+<span class="p">},</span>
+<span class="p">()</span> <span class="p">=&gt;</span>
+<span class="p">{</span>
+   <span class="c1">//The connection to permitted.io is closed</span>
+<span class="p">});</span>
+<span class="k">await</span> <span class="n">_session</span><span class="p">.</span><span class="nf">StartAsync</span><span class="p">(</span><span class="k">new</span><span class="p">()</span>
+<span class="p">{</span>
+   <span class="n">AccessKey</span> <span class="p">=</span> <span class="s">"tbd"</span><span class="p">,</span>
+   <span class="n">UserId</span> <span class="p">=</span> <span class="s">"A|B|C|D|E"</span><span class="p">,</span> <span class="c1">//UserId's pattern: |AppId|LicKey||UserId</span>
+   <span class="n">LicensingEndpoint</span> <span class="p">=</span> <span class="s">"https://permitted.io/api"</span>
+<span class="p">},</span> <span class="n">cancellationToken</span><span class="p">);</span>
+</code></pre></div></div>
+
+<hr />
+
+<h1 id="permittedios-node-sdk">permitted.io’s node SDK</h1>
+
+<h2 id="objectives-1">Objectives</h2>
+
+<p>The goal of releasing this npm package is to enable the permitted.io floating licensing system to integrate with your licensed software with no complex programming efforts.</p>
+
+<h3 id="installing-the-npm-package">Installing the npm Package</h3>
+
+<ul>
+  <li>Command line installation: <code class="language-plaintext highlighter-rouge">npm install @permittedio/permitted.io.sdk@1.0.3</code></li>
+  <li>Installation via <code class="language-plaintext highlighter-rouge">package.json</code> file: <code class="language-plaintext highlighter-rouge">"@permittedio/permitted.io.sdk": "1.0.3"</code></li>
+</ul>
+
+<h3 id="integration-protocol">Integration Protocol</h3>
+
+<p>The TypeScript interface below outlines permitted.io’s integration protocol. It includes several classes, and their roles in the integration process need to be considered, particularly as the <code class="language-plaintext highlighter-rouge">start(...)</code> methods are employed to obtain a license for the user.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/**
+ * Interface for a SeatTracker, which is responsible for tracking seat information.
+ */</span>
+<span class="k">export</span> <span class="kr">interface</span> <span class="nx">ISeatTracker</span> <span class="p">{</span>
+
+    <span class="cm">/**
+     * A subject that can be subscribed to for updates on the SeatTracker.
+     */</span>
+    <span class="nl">subject</span><span class="p">:</span> <span class="nx">Subject</span><span class="o">&lt;</span><span class="nx">SeatTracker</span><span class="o">&gt;</span><span class="p">;</span>
+
+    <span class="cm">/**
+     * Starts the SeatTracker and establishes a connection with the provided parameters.
+     * 
+     * @param connection - The connection parameters required to establish the connection.
+     * @returns A Promise that resolves when the connection is successfully started. The resolved value may vary based on the implementation.
+     */</span>
+    <span class="nx">start</span><span class="p">(</span><span class="nx">connection</span><span class="p">:</span> <span class="nx">ConnectionParameters</span><span class="p">):</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="kr">any</span><span class="o">&gt;</span><span class="p">;</span>
+
+    <span class="cm">/**
+     * Stops the SeatTracker and disconnects any existing connections.
+     * 
+     * @returns A Promise that resolves when the SeatTracker is successfully stopped. The resolved value is `void`.
+     */</span>
+    <span class="nx">stop</span><span class="p">():</span> <span class="nb">Promise</span><span class="o">&lt;</span><span class="k">void</span><span class="o">&gt;</span> <span class="o">|</span> <span class="k">void</span><span class="p">;</span>
+
+    <span class="cm">/**
+     * Retrieves a license message associated with the SeatTracker.
+     * 
+     * @returns A SeatMessage containing information about the license.
+     */</span>
+    <span class="kd">get</span> <span class="nx">licenseMessage</span><span class="p">():</span> <span class="nx">SeatMessage</span><span class="p">;</span>
+
+    <span class="cm">/**
+     * Retrieves additional license data related to the SeatTracker.
+     * 
+     * @returns An object that holds license-specific data.
+     */</span>
+    <span class="kd">get</span> <span class="nx">licenseData</span><span class="p">():</span> <span class="kr">any</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h4 id="connectionparameters-class-1">ConnectionParameters Class</h4>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">LicensingEndpoint</code>: URL of permitted.io’s endpoint.</li>
+  <li><code class="language-plaintext highlighter-rouge">UserId</code>: Recognizable user ID following the pattern <code class="language-plaintext highlighter-rouge">|AppId|LicKey||UserId</code>, where <code class="language-plaintext highlighter-rouge">AppId</code> and <code class="language-plaintext highlighter-rouge">LicKey</code> are obtained from the admin portal, and <code class="language-plaintext highlighter-rouge">UserId</code> is your user’s ID within our system.</li>
+  <li><code class="language-plaintext highlighter-rouge">AccessKey</code>: A unique key provided by permitted.io’s technology team for integration. Please contact us to obtain this key.</li>
+</ul>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kd">class</span> <span class="nx">ConnectionParameters</span> <span class="p">{</span>
+    <span class="nx">LicensingEndpoint</span><span class="o">!</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+    <span class="nx">UserId</span><span class="o">!</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+    <span class="nx">AccessKey</span><span class="o">!</span><span class="p">:</span> <span class="kr">string</span><span class="p">;</span>
+    <span class="k">public</span> <span class="kd">constructor</span><span class="p">(){}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h4 id="seatmessage-enum-1">SeatMessage Enum</h4>
+
+<p>The enumerated values, available via <code class="language-plaintext highlighter-rouge">licenseMessage</code> property, signify specific states once the <code class="language-plaintext highlighter-rouge">subject</code> event is triggered.</p>
+
+<div class="language-typescript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">export</span> <span class="kr">enum</span> <span class="nx">SeatMessage</span> <span class="p">{</span>
+    <span class="nx">Unknown</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span>
+    <span class="nx">Licensed</span><span class="p">,</span>
+    <span class="nx">NotLicensed</span><span class="p">,</span>
+    <span class="nb">Error</span><span class="p">,</span>
+    <span class="nx">DisconnectionRequested</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>The implications of these values are as follows:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Unknown</code>: Indicates an unexpected or unsupported situation in the backend, requiring reporting to permitted.io’s team for troubleshooting.</li>
+  <li><code class="language-plaintext highlighter-rouge">Licensed</code>: Signifies successful user licensing, granting access to your software.</li>
+  <li><code class="language-plaintext highlighter-rouge">NotLicensed</code>: Indicates the user cannot be licensed due to license pool exhaustion, denying access to the software.</li>
+  <li><code class="language-plaintext highlighter-rouge">Error</code>: Represents a backend error requiring reporting to permitted.io’s team.</li>
+  <li><code class="language-plaintext highlighter-rouge">DisconnectionRequested</code>: This request is sent by the backend, typically due to system maintenance, prompting users to sign out.</li>
+</ul>
+
+<h3 id="user-disconnection-1">User Disconnection</h3>
+
+<p>Releasing a user’s license back to the license pool is achieved by either calling the <code class="language-plaintext highlighter-rouge">stop()</code> function or disconnecting the software from the internet.</p>
+
+<h3 id="workflow-for-your-application-or-software-1">Workflow for Your Application or Software</h3>
+
+<p>To successfully integrate your application or software with permitted.io, your workflow must adhere to these requirements:</p>
+
+<ul>
+  <li>Retain or cache the previously mentioned parameters: license key and application ID.</li>
+  <li>Retrieve the user’s ID from your backend after successful authentication.</li>
+  <li>Pass these three pieces of information to permitted.io’s SDK using an instance of the <code class="language-plaintext highlighter-rouge">ConnectionParameters</code> class.</li>
+  <li>Call the <code class="language-plaintext highlighter-rouge">promise</code> function of <code class="language-plaintext highlighter-rouge">Start()</code> and respond accordingly to the messages received from permitted.io’s backend.</li>
+</ul>
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>When <code class="language-plaintext highlighter-rouge">ILogger</code> is incorporated through the dependency injection framework, its instance is utilized by the <code class="language-plaintext highlighter-rouge">ISeatTracker</code> implementation to log activities as applicable. <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>
+
+    </section>
+  </article>
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="/privacy/" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Privacy policy</a></li>
+        
+      
+        
+          <li><a href="/terms/" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Terms of use</a></li>
+        
+      
+        
+          <li><a href="/permitted-io-vs-own-licensing-system/" rel="nofollow noopener noreferrer"><i class="fas fa-link" aria-hidden="true"></i> Why to sign up</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://github.com/permittedio/permitted.io.sdk.net" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> .NET SDK</a></li>
+        
+      
+        
+          <li><a href="https://github.com/permittedio/permitted.io.sdk.node" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> node SDK</a></li>
+        
+      
+        
+      
+        
+      
+    
+
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2023 permitted.io. All rights reserved.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
