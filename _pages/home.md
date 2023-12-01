@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Unleash the power of real-time Floating Licensing platform"
+title: "A reimagined Licensing-as-a-Service to empower real-time floating licensing"
 author_profile: false
 layout: splash
 classes:
@@ -13,7 +13,7 @@ header:
   actions:
     - label: "Create a free account"
       url: "/start"
-excerpt: "Empowering your software usage with real-time Floating Licensing" 
+excerpt: "Get a strong grip on your software usage with permitted.io real-time floating licensing platform" 
 intro:
   - excerpt: permitted.io is not just a licensing platform; it’s a paradigm shift in how software licensing should work!
 feature_row:
@@ -44,7 +44,7 @@ feature_row_right1:
 feature_row_left1:
   - image_path: /assets/images/code-integration.svg
     title: Easy Integration
-    excerpt: permitted.io seamlessly integrates with your existing software systems by its API, whether it’s proprietary software or popular third-party applications. Implementation is hassle-free, and our support team is ready to assist every step of the way.
+    excerpt: permitted.io, as a Licensing-as-a-Service, seamlessly integrates with your existing software systems with its API, whether it’s a proprietary software or popular third-party applications. Implementation is hassle-free, and our support team is ready to assist every step of the way.
 
 feature_row_right2:
   - image_path: /assets/images/agnostic.svg
