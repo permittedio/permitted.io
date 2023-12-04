@@ -13,9 +13,9 @@ header:
   actions:
     - label: "Create a free account"
       url: "/start"
-excerpt: "Get a strong grip on your software usage with permitted.io real-time floating licensing platform" 
+excerpt: "permitted.io is not just a licensing platform; it’s a paradigm shift in how software licensing should work!"
 intro:
-  - excerpt: permitted.io is not just a licensing platform; it’s a paradigm shift in how software licensing should work!
+  - excerpt: "Get a strong grip on your software usage with permitted.io real-time floating licensing platform" 
 feature_row:
   - image_path: /assets/images/cloud.jpg
     title: Seamless Scalability
@@ -147,7 +147,7 @@ permitted.io's platform employs an array of technologies to not only serve deskt
 {: .text-center}
 
 
-|Monthly plan [^1]|Annual plan [^1]|Enteprise Solution [^1]|
+|Monthly plan |Annual plan|Premium plan|
 | ----------- | ----------- |---|
 |Unlimitted applications to license|Unlimitted applications to license|Tailored to the requirements|
 |Unlimitted license models per application|Unlimitted license models per application|Tailored to the requirements|
@@ -155,21 +155,15 @@ permitted.io's platform employs an array of technologies to not only serve deskt
 |Multiple or single session(s) per user|Multiple or single session(s) per user|Tailored to the requirements|
 |License validity period|License validity period|License validity period|
 |Unlimitted users to license|Unlimitted users to license|Tailored to the requirements|
-|Real-time user session tracking [^2]|Real-time user session tracking [^2]|Real-time user session tracking [^2]|
+|Real-time user session tracking|Real-time user session tracking|Real-time user session tracking [^2]|
 |Ability to define trial licenses|Ability to define trial licenses|Tailored to the requirements|
 |Exclusive access to our SDKs' GitHub repos|Exclusive access to our SDKs' GitHub repos|Exclusive access to our SDKs' GitHub repos|
 |Access to technical documentation|Access to technical documentation|Access to technical documentation|
-|99.9% up time [^3]|99.9% up time [^3]|[Please contact us](/contact)|
+|99.9% up time|99.9% up time|[Please contact us](/contact)|
 |N/A|N/A|A replica of our system on cloud|
 |2 support ticket per month|30 support tickets per year|Premium support|
 |7-day free trial|7-day free trial|[Please contact us](/contact)|
-|**$500 per month** [^4]|**$5000 per year** [^4]|[Please contact us](/contact)|
-|<a href="#" class="btn btn--success btn--large">Create a free account</a> [^5]|<a href="#" class="btn btn--success btn--large">Create a free account</a>  [^5]|[Please contact us](/contact)|
+|**US$500 per month**|**US$5000 per year**|[Please contact us](/contact)|
+|<a href="#" class="btn btn--success btn--large">Create a free account</a>|<a href="#" class="btn btn--success btn--large">Create a free account</a>|[Please contact us](/contact)|
 
-[^1]: The price, plan, plan's features, techologies and any other details are subject to review and changes at any time with or without advanced notice.
-[^2]: Once all sessions of an active user is disconnected or terminated, an additional license becomes avialble and added back to the license pool.
-[^3]: The SLA and up time is bound to our cloud service provider and the subscribers indemnify us from any financial or technical losses caused by such possible outages or system disruptions deemed out of our control. The up time does not include regular maintenances, bug fixes, feature releases constituted by permitted.io and we do our best to communicate such regular updates by social media, our website and email.
-[^4]: The subscription fee is not prorated. The price is in USD.
-[^5]: You agree with our terms and conditions and privacy policy when creating an account.
-
----
+You agree with our terms and conditions and privacy policy when creating an account.
